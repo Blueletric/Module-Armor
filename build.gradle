@@ -41,6 +41,9 @@ repositories {
     maven {
         url = "http://maven.shadowfacts.net/"
     }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 
@@ -49,6 +52,8 @@ dependencies {
     compile "mezz.jei:jei_${mc_version}:${jei_version}:api"
     compile "net.shadowfacts:Forgelin:$forgelin_version"
     compile group: 'org.lz4', name: 'lz4-java', version: '1.4.1'
+    compile name: 'refinedstorage-1.6-deobf'
+    compile name: 'appliedenergistics2-rv5-stable-11-api'
 }
 
 compileKotlin {
