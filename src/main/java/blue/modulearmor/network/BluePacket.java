@@ -59,7 +59,7 @@ public abstract class BluePacket
         return new FMLProxyPacket(this.packetBuffer, BluePacketHandler.networkChannelName);
     }
 
-    public BluePacket getPacket131(); {
+    public BluePacket getPacket131() {
         return this;
     }
 
