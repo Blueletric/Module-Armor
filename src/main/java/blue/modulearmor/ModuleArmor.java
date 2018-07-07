@@ -1,14 +1,13 @@
 package blue.modulearmor;
 
-import net.minecraftforge.common.config.Configuration;
+import blue.modulearmor.proxy.ClientProxy;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-
 import javax.annotation.Nonnull;
+
+import static blue.modulearmor.constants.BlueConstants.MODID;
+import static blue.modulearmor.constants.BlueConstants.VERSION;
 
 @Mod(modid = MODID, version = VERSION)
 public final class ModuleArmor {
@@ -28,5 +27,5 @@ public final class ModuleArmor {
     }
 
     @SidedProxy(clientSide = "blue.modulearmor.proxy.ClientSide")
-    public static CommonProxy proxy;
+    public static ClientProxy proxy;
 }
