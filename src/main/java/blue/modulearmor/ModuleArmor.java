@@ -27,5 +27,5 @@ public final class ModuleArmor {
     }
 
     @SidedProxy(clientSide = "blue.modulearmor.proxy.ClientSide")
-    public static ClientProxy proxy;
+    public static CommonProxy proxy;
 }
