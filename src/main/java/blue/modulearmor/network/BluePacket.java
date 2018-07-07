@@ -45,6 +45,7 @@ public abstract class BluePacket
 
     public FMLProxyPacket getFMLProxyPacket() throws IOException {
         this.dataout.writeInt((Integer) BluePacketHandler.packagers.inverse().get(this.packager()));
+    }
 
 
     /**
