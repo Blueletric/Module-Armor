@@ -1,6 +1,5 @@
 package blue.modulearmor;
 
-import blue.modulearmor.proxy.ClientProxy;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
