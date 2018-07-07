@@ -8,11 +8,14 @@ class ModBlocks {
     private val blocks = mutableListOf<Block>()
 
     fun createBlock(material : Material, name: String, creativeTab: CreativeTabs, registryName: String? = null,
-                    toolType: String, miningLevel: Int = 0, unbreakable: Boolean = false){
+                    toolType: String, miningLevel: Int = 0, unbreakable: Boolean = false,
+                    hardness: Float = 5F, resistance: Float = 15F){
         blocks.add(Block(material).apply{
             unlocalizedName = name
             setCreativeTab(creativeTab)
             setRegistryName(registryName ?: name)
+            setHardness(hardness)
+            setResistance(resistance)
             if (unbreakable)
                 setBlockUnbreakable()
             else

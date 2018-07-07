@@ -1,7 +1,5 @@
 package blue.modulearmor.constants;
 
-import kotlin.reflect.jvm.internal.impl.serialization.deserialization.ProtoEnumFlags;
-
 public class BlueConstants {
     //Mod
     public static final String MODID = "modulearmor";
