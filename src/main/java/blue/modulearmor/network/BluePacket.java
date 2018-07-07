@@ -45,16 +45,6 @@ public abstract class BluePacket
 
     public FMLProxyPacket getFMLProxyPacket() throws IOException {
         this.dataout.writeInt((Integer) BluePacketHandler.packagers.inverse().get(this.packager()));
-    }
-
-
-    /**
-     * Gets the MC packet associated with this MusePacket
-     *
-     * @return Packet250CustomPayload
-     */
-    public FMLProxyPacket getFMLProxyPacket() throws IOException {
-        this.dataout.writeInt((Integer) BluePacketHandler.packagers.inverse().get(this.packager()));
         this.write();
         return new FMLProxyPacket(this.packetBuffer, BluePacketHandler.networkChannelName);
     }
